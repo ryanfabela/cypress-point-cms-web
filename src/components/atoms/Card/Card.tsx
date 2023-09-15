@@ -4,4 +4,4 @@ import "./Card.scss";
 export interface CardProps {
 }
 
-export const Card = (): CardProps => <div>Card_component</div>;
+export const Card = (): CardProps => <div className="card">Card_component</div>;
