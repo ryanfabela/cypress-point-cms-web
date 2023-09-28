@@ -10,6 +10,7 @@ export interface HeadingsProps
 
 export const Headings = ({ children, as, ...rest }: HeadingsProps) => {
   const Tag = as;
+
   return (
     <Tag className={clsx(styles.headings)} {...rest}>
       {children}
