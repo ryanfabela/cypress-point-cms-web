@@ -1,0 +1,25 @@
+$inactive-color: #d3d3d3;
+$active-color: #000;
+
+.inputField {
+    // font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+
+    border: none;
+    border-bottom: 1px solid $inactive-color;
+
+    &::placeholder {
+        color: $inactive-color;
+    }
+
+    &:hover, &:active {
+        border-bottom-color: $active-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}

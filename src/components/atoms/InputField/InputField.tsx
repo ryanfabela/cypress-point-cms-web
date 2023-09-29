@@ -1,9 +1,14 @@
 import React from "react";
-import "./InputField.scss";
+import clsx from "clsx";
+import styles from "./InputField.module.scss";
 
 export interface InputFieldProps {
 }
 
-export const InputField = (): InputFieldProps => (
-    <div>InputField_component</div>
+export const InputField = ({
+    placeholder,
+    onChange,
+    onFocus
+}: InputFieldProps) => (
+    <input className={clsx(styles.inputField)} placeholder={placeholder} onChange={onChange} onFocus={onFocus}/>
 );
