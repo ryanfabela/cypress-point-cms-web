@@ -1,7 +1,12 @@
-@import '../../../styles/colors.scss';
+@import "../../../styles/colors.scss";
 
+button:hover {
+  scale: 1.1;
+  transition-duration: 1s;
+}
 .button {
-  padding: .5em 1em;
+  transition-duration: 1s;
+  padding: 0.5em 1em;
   border: none;
   border-radius: 6px;
 }
@@ -15,7 +20,7 @@
 }
 
 .small {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .medium {
