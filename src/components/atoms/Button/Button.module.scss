@@ -2,10 +2,10 @@
 
 button:hover {
   scale: 1.1;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .button {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   padding: 0.5em 1em;
   border: none;
   border-radius: 6px;
@@ -13,10 +13,12 @@ button:hover {
 
 .primary {
   background-color: $primary;
+  color: $secondary;
 }
 
 .secondary {
   background-color: $secondary;
+  color: $primary;
 }
 
 .small {
