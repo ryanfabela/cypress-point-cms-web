@@ -1,0 +1,37 @@
+@import "../../../styles/colors.scss";
+
+.card {
+  display: flex;
+  width: 799px;
+  padding: 57px 227px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+}
+
+.black {
+  background-color: $black;
+}
+.white {
+  background-color: $white;
+}
+.gray {
+  background-color: $gray;
+}
+.lightPrimary {
+  background-color: $lightPrimary;
+}
+.primary {
+  background-color: $primary;
+}
+.secondary {
+  background-color: $secondary;
+}
+.tertiary {
+  background-color: $tertiary;
+}
+.gray {
+  background-color: $gray;
+}
