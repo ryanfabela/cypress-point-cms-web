@@ -1,7 +1,6 @@
 .text {
   color: #4d5053;
   // font-family: Jost;
-  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 33px */
@@ -20,21 +19,23 @@
   }
 }
 .paragraph {
-  &.normal {
-    color: #4d5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: 0.22px;
-  }
-  &.small {
-    letter-spacing: 0.18px;
-    font-size: 18px;
-  }
-  &.medium {
-    letter-spacing: 0.2px;
-    font-size: 20px;
-  }
+  color: #4d5053;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+}
+
+.smallSize {
+  letter-spacing: 0.18px;
+  font-size: 18px;
+}
+.mediumSize {
+  letter-spacing: 0.2px;
+  font-size: 20px;
+}
+
+.largeSize {
+  font-size: 22px;
 }
