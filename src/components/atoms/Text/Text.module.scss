@@ -1,6 +1,8 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/typography.scss";
+
 .text {
-  color: #4d5053;
-  // font-family: Jost;
+  color: $gray;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 33px */
@@ -17,25 +19,39 @@
   &.italic {
     font-style: italic;
   }
-}
-.paragraph {
-  color: #4d5053;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 33px */
-  letter-spacing: 0.22px;
+
+  &.paragraph {
+    color: $gray;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+  }
+  &.blockQuote {
+    color: $primary;
+    font-size: 25px;
+    font-family: $fontFamilySecondary;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 125%; /* 31.25px */
+    letter-spacing: 0.5px;
+  }
 }
 
-.smallSize {
-  letter-spacing: 0.18px;
-  font-size: 18px;
-}
-.mediumSize {
-  letter-spacing: 0.2px;
-  font-size: 20px;
-}
+// Sizes
 
-.largeSize {
-  font-size: 22px;
+.text {
+  &.smallSize {
+    letter-spacing: 0.18px;
+    font-size: 18px;
+  }
+  &.mediumSize {
+    letter-spacing: 0.2px;
+    font-size: 20px;
+  }
+
+  &.largeSize {
+    font-size: 22px;
+  }
 }
