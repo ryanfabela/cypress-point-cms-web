@@ -3,12 +3,25 @@ import clsx from "clsx";
 import styles from "./InputField.module.scss";
 
 export interface InputFieldProps {
+  name?: string;
+  className?: string;
+  placeholder?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
 }
 
 export const InputField = ({
-    placeholder,
-    onChange,
-    onFocus
+  className,
+  placeholder,
+  onChange,
+  onFocus,
+  name,
 }: InputFieldProps) => (
-    <input className={clsx(styles.inputField)} placeholder={placeholder} onChange={onChange} onFocus={onFocus}/>
+  <input
+    name={name}
+    className={clsx(styles.inputField, className)}
+    placeholder={placeholder}
+    onChange={onChange}
+    onFocus={onFocus}
+  />
 );

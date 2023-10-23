@@ -1,2 +1,35 @@
 .form {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "body body";
+  grid-template-rows: 50px 50px 80px;
+  gap: 20px;
+  column-gap: 20%;
+}
+
+.name {
+  grid-area: name;
+}
+.email {
+  grid-area: email;
+}
+.subject {
+  grid-area: subject;
+}
+.phone {
+  grid-area: phone;
+}
+.emailBody {
+  grid-area: body;
+  resize: none;
+  background-color: transparent;
+  color: #4d5053;
+  border: none;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
 }
